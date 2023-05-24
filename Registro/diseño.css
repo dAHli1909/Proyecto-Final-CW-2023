@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Kalam";
+    src: url('./Kalam-Bold.ttf');
+}
+*{
+    font-family: "Kalam", serif;
+}
+input{
+    margin-top: 10%;
+    border-radius: 0.5rem;
+    background-color: #c47dc7;
+}
+.form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}

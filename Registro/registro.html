@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--CSS-->
+    <link rel="stylesheet" href="./diseño.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="form">
+            <center><h1>REGÍSTRATE</h1></center>
+            <form id= "input" action="./recibreg.php" method="post" target="_blank">
+                <label for="text" style="margin-bottom: 0%;">Elige un nombre de usuario:</label>
+                    <br>
+                    <input name="nombre" id="text" required>
+                    <br>
+                    <br>
+                    <label style="margin-bottom: 0%;">Núm de cuenta:
+                        <br>
+                        <input type="tel" maxlength="9" name="numcuenta" required>
+                    </label><br>
+                    <br>
+                    <label for="text" style="margin-bottom: 0%;">Introduce tu contraseña:</label>
+                    <br>
+                    <input name="contraseña1" id="text" required>
+                    <br>
+                    <br>
+                    <label for="text" style="margin-bottom: 0%;">Confirma tu contraseña:</label>
+                    <br>
+                    <input name="contraseña2" id="text" required>
+                    <br>
+                    <input type="submit" value="continuar"/>
+            </form>
+        </div>
+</body>
+</html>
