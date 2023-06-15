@@ -52,6 +52,7 @@ CREATE TABLE `mensajes` (
   `ID_foro` int(11) DEFAULT NULL,
   `Contenido` varchar(200) DEFAULT NULL,
   `Hora` int(6) DEFAULT NULL,
+  `Estado` int(11) DEFAULT NULL,---lo puse para lo de la visibilidad del mensaje; probablemente podríamos borrarlo ---
   PRIMARY KEY (`ID_mensaje`),
   KEY `ID_usuario` (`ID_usuario`),
   KEY `ID_foro` (`ID_foro`),
@@ -82,6 +83,7 @@ CREATE TABLE `publicar_perdido` (
   `Descripcion` varchar(100) DEFAULT NULL,
   `Imagen` longblob DEFAULT NULL,
   `Fecha_recuperacion` date DEFAULT NULL,
+  `Estado` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID_usuario`),
   CONSTRAINT `publicar_perdido_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
